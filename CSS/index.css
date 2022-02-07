@@ -1,0 +1,28 @@
+
+#git {
+	max-height: 80%;
+}
+
+.main {
+	height: 80%;
+
+	margin-top: 35px;
+}
+
+h1, h2, p {
+	text-align: center;
+
+}
+
+button, input {
+	display: block;
+	margin: 0 auto;
+}
+
+#chooseUser {
+	margin-top: 195px;
+}
+
+#title {
+	color: var(--primary-color);
+}

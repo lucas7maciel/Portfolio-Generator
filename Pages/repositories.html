@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Repositories</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="../Media/icon.png">
+	<link rel="stylesheet" href="../CSS/general.css">
+	<link rel="stylesheet" href="../CSS/repositories.css">
+    <script src="../Javascript/general.js"></script>
+	<script src="../Javascript/setData.js"></script>
+</head>
+<body onload="setRepos()">
+	<div class="header">
+        <img src="../Media/home.png" alt="Home Page" onclick="location.href='../index.html'">
+
+        <div class="pages">
+
+            <div id="profile" onclick="location.href='profile.html'">
+	            <a>Profile</a>
+            </div>
+
+            <div id="repos" class="active">
+                <a>Repositories</a>
+            </div>
+
+        </div>
+
+        <img id="theme" src="../Media/dark_theme.png" alt="Theme" onclick="changeTheme()">
+    </div>
+
+    <div class="main">
+    	<div class="intro">
+    		<h1>User Repositories</h1>
+			<p>The following projects are automatically loaded.</p>
+    	</div>
+		
+		<DIV class="repoContainer"></DIV>
+    </div>
+</body>
+</html>

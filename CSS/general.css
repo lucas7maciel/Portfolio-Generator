@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+	--primary-color: #E5E8E8;
+	--secondary-color: #000401;
+
+	--font-color: black;
+
+	--invert-percent: 0%;
+}
+
+.dark {
+	--primary-color: #000401;
+	--secondary-color: #E5E8E8;
+
+	--font-color: white;
+
+	--invert-percent: 100%;
+}
+
+body {
+	background-color: var(--primary-color);
+}
+
+h1, h2, h3, h4, p, a, hr {
+	font-family: 'Inter', sans-serif;
+	color: var(--font-color);
+}
+
+.header {
+	width: 99%;
+	height: 50px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+
+	background-color: var(--secondary-color);
+	border-radius: 5px;
+}
+
+.header img {
+	flex: 8%;
+	max-height: 95%;
+	object-fit: contain;
+
+	cursor: pointer;
+	filter: invert(var(--invert-percent));
+}
+
+.header .pages, .header .titleContainer {
+	flex: 84%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header .pages .active {
+	background-color: green;
+	cursor: default;
+}
+
+.header .pages .active a {
+	color: white;
+}
+
+.header .pages div {
+	height: 50px;
+	padding-right: 25px;
+	padding-left: 25px;
+
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+
+  	cursor: pointer;
+}
+
+.header .pages a {
+	color: var(--primary-color);
+}

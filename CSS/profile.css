@@ -1,0 +1,42 @@
+
+.picContainer {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.picContainer img {
+	display: block;
+	margin: auto;
+}
+
+.picContainer p {
+	text-align: center;
+}
+
+.picContainer hr {
+	margin-top: 35px;
+	width: 65%;
+
+	border: none;
+	background-color: var(--font-color);
+	height: 1px;
+}
+
+.userInfo {
+	width: 60%;
+	margin: 0 auto;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.userInfo div {
+	flex: 50%;
+
+	text-align: center;
+}
+
+.userInfo hr {
+	width: 80%;
+}
